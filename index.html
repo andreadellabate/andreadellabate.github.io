@@ -1,15 +1,142 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>My GitHub Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dr. Alex Morgan – PhD Student in Computational Biology</title>
     <style>
-      body { font-family: sans-serif; text-align: center; margin-top: 10%; }
-      h1 { color: #007acc; }
+      :root {
+        --bg: #f9fafc;
+        --accent: #1e88e5;
+        --text: #222;
+        --muted: #666;
+        --card-bg: #fff;
+        --shadow: rgba(0, 0, 0, 0.08);
+      }
+      body {
+        font-family: "Inter", "Segoe UI", sans-serif;
+        margin: 0;
+        background-color: var(--bg);
+        color: var(--text);
+        line-height: 1.6;
+      }
+      header {
+        background: var(--accent);
+        color: white;
+        text-align: center;
+        padding: 3rem 1rem 2rem;
+      }
+      header h1 {
+        margin: 0;
+        font-size: 2rem;
+      }
+      header p {
+        margin: 0.5rem 0 0;
+        font-size: 1.1rem;
+        opacity: 0.9;
+      }
+      main {
+        max-width: 800px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+      }
+      section {
+        background: var(--card-bg);
+        padding: 1.5rem;
+        border-radius: 12px;
+        box-shadow: 0 2px 6px var(--shadow);
+        margin-bottom: 1.5rem;
+      }
+      h2 {
+        color: var(--accent);
+        margin-top: 0;
+      }
+      a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      footer {
+        text-align: center;
+        font-size: 0.9rem;
+        color: var(--muted);
+        padding: 2rem 1rem;
+      }
+      .social a {
+        margin: 0 0.5rem;
+        font-weight: 500;
+      }
     </style>
   </head>
   <body>
-    <h1>Hello, world! 👋</h1>
-    <p>Welcome to my GitHub Pages site.</p>
+    <header>
+      <h1>Dr. Alex Morgan</h1>
+      <p>PhD Student in Computational Biology · University of Helsinki</p>
+    </header>
+
+    <main>
+      <section>
+        <h2>About Me</h2>
+        <p>
+          I am a fourth-year PhD candidate exploring gene regulation through
+          computational modeling and AI-driven bioinformatics. My research aims
+          to understand how epigenetic mechanisms influence transcriptional
+          networks in neural development.
+        </p>
+        <p>
+          When I’m not analyzing RNA-seq data or building predictive models, I
+          enjoy hiking, photography, and open-source software development.
+        </p>
+      </section>
+
+      <section>
+        <h2>Research Interests</h2>
+        <ul>
+          <li>Machine learning applications in genomics</li>
+          <li>Regulatory network inference</li>
+          <li>Epigenomics and chromatin accessibility</li>
+          <li>Computational neuroscience</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Publications</h2>
+        <ul>
+          <li>
+            Morgan, A., et al. (2024). *Integrative modeling of chromatin states
+            in neural differentiation.* <em>Bioinformatics Journal</em>.
+          </li>
+          <li>
+            Morgan, A., & Chen, L. (2023). *Deep learning for enhancer–promoter
+            interaction prediction.* <em>Nature Computational Biology</em>.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Contact</h2>
+        <p>
+          📧 alex.morgan@helsinki.fi<br />
+          🌐 <a href="https://alexmorgan.github.io">alexmorgan.github.io</a><br />
+          🧬 GitHub:
+          <a href="https://github.com/alexmorgan">github.com/alexmorgan</a><br />
+          🧑‍🏫 LinkedIn:
+          <a href="https://linkedin.com/in/alexmorgan"
+            >linkedin.com/in/alexmorgan</a
+          >
+        </p>
+        <div class="social">
+          <a href="#">Twitter</a> ·
+          <a href="#">ResearchGate</a> ·
+          <a href="#">Google Scholar</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      © 2025 Alex Morgan — Built with ❤️ using GitHub Pages
+    </footer>
   </body>
 </html>
