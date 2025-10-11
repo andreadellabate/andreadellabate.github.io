@@ -6,68 +6,75 @@
     <title>Andrea Vincenzo Dell'Abate</title>
     <style>
       :root {
-        --bg: #f9fafc;
-        --accent: #1e88e5;
-        --text: #222;
-        --muted: #666;
-        --card-bg: #fff;
-        --shadow: rgba(0, 0, 0, 0.08);
+        --bg: #0d1117;
+        --card-bg: #161b22;
+        --text: #e6edf3;
+        --muted: #9aa3ad;
+        --accent: #58a6ff;
+        --border: #30363d;
+        --shadow: rgba(0, 0, 0, 0.4);
       }
+
       body {
         font-family: "Inter", "Segoe UI", sans-serif;
         margin: 0;
         background-color: var(--bg);
         color: var(--text);
-        line-height: 1.6;
+        line-height: 1.7;
+        -webkit-font-smoothing: antialiased;
       }
+
       header {
-        background: var(--accent);
-        color: white;
         text-align: center;
-        padding: 3rem 1rem 2rem;
+        padding: 4rem 1rem 3rem;
+        background: linear-gradient(180deg, #0d1117 0%, #11161e 100%);
+        border-bottom: 1px solid var(--border);
       }
+
       header h1 {
         margin: 0;
-        font-size: 2rem;
+        font-size: 2.2rem;
+        color: var(--text);
       }
+
       header p {
-        margin: 0.5rem 0 0;
-        font-size: 1.1rem;
-        opacity: 0.9;
+        margin: 0.75rem 0 0;
+        color: var(--muted);
+        font-size: 1.05rem;
       }
+
       main {
-        max-width: 800px;
+        max-width: 850px;
         margin: 2rem auto;
         padding: 0 1rem;
       }
+
       section {
         background: var(--card-bg);
-        padding: 1.5rem;
-        border-radius: 12px;
-        box-shadow: 0 2px 6px var(--shadow);
-        margin-bottom: 1.5rem;
+        padding: 1.75rem;
+        border-radius: 14px;
+        box-shadow: 0 2px 10px var(--shadow);
+        margin-bottom: 1.75rem;
+        border: 1px solid var(--border);
       }
+
       h2 {
         color: var(--accent);
         margin-top: 0;
+        font-size: 1.4rem;
+        border-bottom: 1px solid var(--border);
+        padding-bottom: 0.4rem;
       }
+
       a {
         color: var(--accent);
         text-decoration: none;
       }
+
       a:hover {
         text-decoration: underline;
       }
-      footer {
-        text-align: center;
-        font-size: 0.9rem;
-        color: var(--muted);
-        padding: 2rem 1rem;
-      }
-      .social a {
-        margin: 0 0.5rem;
-        font-weight: 500;
-      }
+
       .about-container {
         display: flex;
         align-items: flex-start;
@@ -76,23 +83,56 @@
       }
 
       .profile-pic {
-        width: 220px;
+        width: 230px;
         height: auto;
         object-fit: cover;
-        border-radius: 10px;               /* soft rounded corners */
-        border: 2px solid #e0e0e0;         /* light gray border */
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* subtle soft shadow */
+        border-radius: 10px;
+        border: 1px solid var(--border);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         flex-shrink: 0;
       }
-
 
       .about-text {
         flex: 1;
         min-width: 250px;
       }
 
+      footer {
+        text-align: center;
+        font-size: 0.9rem;
+        color: var(--muted);
+        padding: 2.5rem 1rem;
+        border-top: 1px solid var(--border);
+        margin-top: 3rem;
+      }
+
+      /* Hover and transition polish */
+      * {
+        transition: color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      /* Optional: link underline animation */
+      a {
+        position: relative;
+      }
+
+      a::after {
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 0;
+        height: 1px;
+        background: var(--accent);
+        transition: width 0.3s ease;
+      }
+
+      a:hover::after {
+        width: 100%;
+      }
     </style>
   </head>
+
   <body>
     <header>
       <h1>Andrea Vincenzo Dell'Abate</h1>
@@ -103,71 +143,96 @@
       <section id="about">
         <h2>About Me</h2>
         <div class="about-container">
-          <img src="andrea.jpg" alt="Andrea Vincenzo Dell'Abate" class="profile-pic" />
+          <img
+            src="andrea.jpg"
+            alt="Andrea Vincenzo Dell'Abate"
+            class="profile-pic"
+          />
           <div class="about-text">
             <p>
-              I am a first-year PhD candidate under the supervision of 
-              <a href="https://louisebudzynski.github.io/" target="_blank" rel="noopener">Louise Budzynski</a> 
-              and 
-              <a href="https://www.di.ens.fr/laurent.massoulie/" target="_blank" rel="noopener">Laurent Massoulié</a>,
-              working in the <a href="https://www.di.ens.fr/argo/" target="_blank" rel="noopener">ARGO</a> research team. 
-              My work focuses on studying Bayesian Inference problems with structured signal by using statistical physics methods.
+              I am a first-year PhD candidate under the supervision of
+              <a href="https://louisebudzynski.github.io/" target="_blank" rel="noopener"
+                >Louise Budzynski</a
+              >
+              and
+              <a
+                href="https://www.di.ens.fr/laurent.massoulie/"
+                target="_blank"
+                rel="noopener"
+                >Laurent Massoulié</a
+              >,
+              working in the
+              <a href="https://www.di.ens.fr/argo/" target="_blank" rel="noopener"
+                >ARGO</a
+              >
+              research team. My work focuses on studying Bayesian Inference
+              problems with structured signal by using statistical physics
+              methods.
             </p>
 
             <p>
-              Before that, I graduated from the international track of the 
-              <a href="http://www.pcs.polito.it/educational_tracks/international_track" target="_blank" rel="noopener">MSc in Physics of Complex Systems</a> 
-              offered jointly by 
-              <a href="https://www.polito.it" target="_blank" rel="noopener">Politecnico di Torino</a>, 
-              <a href="https://www.sissa.it" target="_blank" rel="noopener">SISSA</a>, 
-              <a href="https://www.ictp.it" target="_blank" rel="noopener">ICTP</a>, 
-              <a href="https://www.sorbonne-universite.fr/en" target="_blank" rel="noopener">Sorbonne Université</a>, 
-              <a href="https://u-paris.fr/language/en/" target="_blank" rel="noopener">Université Paris Cité</a> 
-              and 
-              <a href="https://www.universite-paris-saclay.fr/en" target="_blank" rel="noopener">Université Paris-Saclay</a>.
-              My master thesis  <a href="https://webthesis.biblio.polito.it/36688/" target="_blank" rel="noopener">"Statistical inference with correlated disorder: the planted spin glass"</a> was supervised by Louise Budzynski and 
-              <a href="https://staff.polito.it/alfredo.braunstein/" target="_blank" rel="noopener">Alfredo Braunstein</a>.
+              Before that, I graduated from the international track of the
+              <a
+                href="http://www.pcs.polito.it/educational_tracks/international_track"
+                target="_blank"
+                rel="noopener"
+                >MSc in Physics of Complex Systems</a
+              >
+              offered jointly by
+              <a href="https://www.polito.it" target="_blank" rel="noopener"
+                >Politecnico di Torino</a
+              >,
+              <a href="https://www.sissa.it" target="_blank" rel="noopener"
+                >SISSA</a
+              >,
+              <a href="https://www.ictp.it" target="_blank" rel="noopener"
+                >ICTP</a
+              >,
+              <a
+                href="https://www.sorbonne-universite.fr/en"
+                target="_blank"
+                rel="noopener"
+                >Sorbonne Université</a
+              >,
+              <a href="https://u-paris.fr/language/en/" target="_blank" rel="noopener"
+                >Université Paris Cité</a
+              >
+              and
+              <a
+                href="https://www.universite-paris-saclay.fr/en"
+                target="_blank"
+                rel="noopener"
+                >Université Paris-Saclay</a
+              >. My master thesis
+              <a
+                href="https://webthesis.biblio.polito.it/36688/"
+                target="_blank"
+                rel="noopener"
+                >"Statistical inference with correlated disorder: the planted
+                spin glass"</a
+              >
+              was supervised by Louise Budzynski and
+              <a
+                href="https://staff.polito.it/alfredo.braunstein/"
+                target="_blank"
+                rel="noopener"
+                >Alfredo Braunstein</a
+              >.
             </p>
           </div>
         </div>
       </section>
-      <!--
-      <section>
-        <h2>Research Interests</h2>
-        <ul>
-          <li>Machine learning applications in genomics</li>
-          <li>Regulatory network inference</li>
-          <li>Epigenomics and chromatin accessibility</li>
-          <li>Computational neuroscience</li>
-        </ul>
-      </section>
-      -->
-      <!--
-      <section>
-        <h2>Publications</h2>
-        <ul>
-          <li>
-            Morgan, A., et al. (2024). *Integrative modeling of chromatin states
-            in neural differentiation.* <em>Bioinformatics Journal</em>.
-          </li>
-          <li>
-            Morgan, A., & Chen, L. (2023). *Deep learning for enhancer–promoter
-            interaction prediction.* <em>Nature Computational Biology</em>.
-          </li>
-        </ul>
-      </section>
-      -->
+
       <section>
         <h2>Contact</h2>
         <p>
-            <i>Email:</i>  andrea [dot] dellabate [at] inria [dot] fr <br />
-            <i>Physical Address:</i> C 104 Inria Paris Center, 48 Rue Barrault, 75013 Paris
+          <i>Email:</i> andrea [dot] dellabate [at] inria [dot] fr <br />
+          <i>Physical Address:</i> C 104 Inria Paris Center, 48 Rue Barrault,
+          75013 Paris
         </p>
       </section>
     </main>
 
-    <footer>
-      Vibe coded
-    </footer>
+    <footer> Vibe coded </footer>
   </body>
 </html>
