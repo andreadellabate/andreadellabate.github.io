@@ -68,6 +68,29 @@
         margin: 0 0.5rem;
         font-weight: 500;
       }
+      .about-container {
+        display: flex;
+        align-items: flex-start;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+      }
+
+      .profile-pic {
+        width: 220px;
+        height: auto;
+        object-fit: cover;
+        border-radius: 10px;               /* soft rounded corners */
+        border: 2px solid #e0e0e0;         /* light gray border */
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* subtle soft shadow */
+        flex-shrink: 0;
+      }
+
+
+      .about-text {
+        flex: 1;
+        min-width: 250px;
+      }
+
     </style>
   </head>
   <body>
@@ -77,38 +100,36 @@
     </header>
 
     <main>
-      <section>
+      <section id="about">
         <h2>About Me</h2>
-        <p>
-          I am a first-year PhD candidate under the supervision of 
-          <a href="https://louisebudzynski.github.io/" target="_blank" rel="noopener">Louise Budzynski</a> 
-          and 
-          <a href="https://www.di.ens.fr/laurent.massoulie/" target="_blank" rel="noopener">Laurent Massoulié</a>,
-          working in the <a href="https://www.di.ens.fr/argo/" target="_blank" rel="noopener">ARGO</a> research team. 
-          My work focuses on studying Bayesian Inference problems with structured signal by using statistical physics methods.
-        </p>
+        <div class="about-container">
+          <img src="andrea.jpg" alt="Andrea Vincenzo Dell'Abate" class="profile-pic" />
+          <div class="about-text">
+            <p>
+              I am a first-year PhD candidate under the supervision of 
+              <a href="https://louisebudzynski.github.io/" target="_blank" rel="noopener">Louise Budzynski</a> 
+              and 
+              <a href="https://www.di.ens.fr/laurent.massoulie/" target="_blank" rel="noopener">Laurent Massoulié</a>,
+              working in the <a href="https://www.di.ens.fr/argo/" target="_blank" rel="noopener">ARGO</a> research team. 
+              My work focuses on studying Bayesian Inference problems with structured signal by using statistical physics methods.
+            </p>
 
-        <p>
-          Before that, I graduated from the international track of the 
-          <a href="http://www.pcs.polito.it/educational_tracks/international_track" target="_blank" rel="noopener">MSc in Physics of Complex Systems</a> 
-          offered jointly by 
-          <a href="https://www.polito.it" target="_blank" rel="noopener">Politecnico di Torino</a>, 
-          <a href="https://www.sissa.it" target="_blank" rel="noopener">SISSA</a>, 
-          <a href="https://www.ictp.it" target="_blank" rel="noopener">ICTP</a>, 
-          <a href="https://www.sorbonne-universite.fr/en" target="_blank" rel="noopener">Sorbonne Université</a>, 
-          <a href="https://u-paris.fr/language/en/" target="_blank" rel="noopener">Université Paris Cité</a> 
-          and 
-          <a href="https://www.universite-paris-saclay.fr/en" target="_blank" rel="noopener">Université Paris-Saclay</a>.
-          My master thesis  <a href="https://webthesis.biblio.polito.it/36688/" target="_blank" rel="noopener">"Statistical inference with correlated disorder: the planted spin glass"</a> was supervised by Louise Budzynski and 
-          <a href="https://staff.polito.it/alfredo.braunstein/" target="_blank" rel="noopener">Alfredo Braunstein</a>.
-        </p>
-
-        <!--
-        <p>
-          When I’m not analyzing RNA-seq data or building predictive models, I
-          enjoy hiking, photography, and open-source software development.
-        </p>
-        -->
+            <p>
+              Before that, I graduated from the international track of the 
+              <a href="http://www.pcs.polito.it/educational_tracks/international_track" target="_blank" rel="noopener">MSc in Physics of Complex Systems</a> 
+              offered jointly by 
+              <a href="https://www.polito.it" target="_blank" rel="noopener">Politecnico di Torino</a>, 
+              <a href="https://www.sissa.it" target="_blank" rel="noopener">SISSA</a>, 
+              <a href="https://www.ictp.it" target="_blank" rel="noopener">ICTP</a>, 
+              <a href="https://www.sorbonne-universite.fr/en" target="_blank" rel="noopener">Sorbonne Université</a>, 
+              <a href="https://u-paris.fr/language/en/" target="_blank" rel="noopener">Université Paris Cité</a> 
+              and 
+              <a href="https://www.universite-paris-saclay.fr/en" target="_blank" rel="noopener">Université Paris-Saclay</a>.
+              My master thesis  <a href="https://webthesis.biblio.polito.it/36688/" target="_blank" rel="noopener">"Statistical inference with correlated disorder: the planted spin glass"</a> was supervised by Louise Budzynski and 
+              <a href="https://staff.polito.it/alfredo.braunstein/" target="_blank" rel="noopener">Alfredo Braunstein</a>.
+            </p>
+          </div>
+        </div>
       </section>
       <!--
       <section>
